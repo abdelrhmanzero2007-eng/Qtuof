@@ -77,7 +77,6 @@ body {
 }
 .Heroo .contianar header nav ul li:hover::before {
   width: 100%;
-  transform: rotate(360deg);
 }
 .Heroo .contianar header nav ul li::before {
   content: "";
@@ -367,104 +366,22 @@ body {
 }
 
 .section3 .contianar .cards {
-  align-items: center;
-  justify-content: space-evenly;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-.section3 .contianar .cards .card {
-  width: 30%;
-  height: 340px;
-  position: relative;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  border: 5px solid rgba(255, 192, 17, 0.199);
-  border-radius: 7px;
-}
 
-.section3 .contianar .cards .card img {
-  width: 75%;
-  height: auto;
-}
-
-.section3 .contianar .cards .card .Description {
-  position: absolute;
-  height: 100%;
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-}
-
-.section3 .contianar .cards .card:hover .carts {
-  opacity: 1;
-  transform: translateY(90px);
-}
-
-.section3 .contianar .cards .card .Description p {
-  text-align: center;
-  padding: 0 27px;
-}
-
-.section3 .contianar .cards .card .carts {
-  width: 100%;
-  height: 80px;
-  z-index: 0;
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  transition: 0.3s ease-in-out;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  border: 5px solid rgba(255, 192, 17, 0.199);
-  border-radius: 7px;
-  opacity: 0;
-}
-
-.section3 .contianar .cards .card .carts .svgs,
-.price {
-  margin: auto;
-  width: 80%;
-  height: 50%;
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-}
-
-.section3 .contianar .cards .card .carts .svgs svg {
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.section3 .contianar .cards .card .carts .price h4,
-del {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.section3 .contianar .cards .card .carts .price h4 span {
-  color: rgb(0, 255, 0);
-  font-size: 22px;
-}
-
-.section3 .contianar .cards .card .carts .price del  {
-  transform: skew(-10deg);
-  font-size: 18px;
-}
-
-.section3 .contianar .cards .card .carts .price del span{
-  color: rgb(255, 88, 88);
-  font-size: 22px;
+  display: grid;
+ grid-template-columns: repeat(minmax(300px,1fr));
+  gap: 30px;
 
 }
+
+
+
+
+
+
+
+
+
+
 
 .section3::before {
   content: "Products";
